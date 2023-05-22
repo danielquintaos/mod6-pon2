@@ -1,0 +1,26 @@
+[1.175s] Invoking command in '/home/felix/mod6/pon2/ros2_ws/src/Artaud': PYTHONPATH=/home/felix/mod6/pon2/ros2_ws/build/Artaud/prefix_override:/home/felix/mod6/pon2/ros2_ws/install/Artaud/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/Artaud build --build-base /home/felix/mod6/pon2/ros2_ws/build/Artaud/build install --record /home/felix/mod6/pon2/ros2_ws/build/Artaud/install.log --single-version-externally-managed
+[1.555s] running egg_info
+[1.557s] writing ../../build/Artaud/Artaud.egg-info/PKG-INFO
+[1.558s] writing dependency_links to ../../build/Artaud/Artaud.egg-info/dependency_links.txt
+[1.558s] writing entry points to ../../build/Artaud/Artaud.egg-info/entry_points.txt
+[1.558s] writing requirements to ../../build/Artaud/Artaud.egg-info/requires.txt
+[1.559s] writing top-level names to ../../build/Artaud/Artaud.egg-info/top_level.txt
+[1.560s] reading manifest file '../../build/Artaud/Artaud.egg-info/SOURCES.txt'
+[1.562s] writing manifest file '../../build/Artaud/Artaud.egg-info/SOURCES.txt'
+[1.563s] running build
+[1.563s] running build_py
+[1.565s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.565s]   warnings.warn(
+[1.566s] copying Artaud/__init__.py -> /home/felix/mod6/pon2/ros2_ws/build/Artaud/build/lib/Artaud
+[1.566s] running install
+[1.566s] running install_lib
+[1.567s] copying /home/felix/mod6/pon2/ros2_ws/build/Artaud/build/lib/Artaud/__init__.py -> /home/felix/mod6/pon2/ros2_ws/install/Artaud/lib/python3.10/site-packages/Artaud
+[1.568s] byte-compiling /home/felix/mod6/pon2/ros2_ws/install/Artaud/lib/python3.10/site-packages/Artaud/__init__.py to __init__.cpython-310.pyc
+[1.569s] running install_data
+[1.570s] running install_egg_info
+[1.572s] removing '/home/felix/mod6/pon2/ros2_ws/install/Artaud/lib/python3.10/site-packages/Artaud-0.0.0-py3.10.egg-info' (and everything under it)
+[1.573s] Copying ../../build/Artaud/Artaud.egg-info to /home/felix/mod6/pon2/ros2_ws/install/Artaud/lib/python3.10/site-packages/Artaud-0.0.0-py3.10.egg-info
+[1.574s] running install_scripts
+[1.605s] Installing Antonin script to /home/felix/mod6/pon2/ros2_ws/install/Artaud/lib/Artaud
+[1.606s] writing list of installed files to '/home/felix/mod6/pon2/ros2_ws/build/Artaud/install.log'
+[1.648s] Invoked command in '/home/felix/mod6/pon2/ros2_ws/src/Artaud' returned '0': PYTHONPATH=/home/felix/mod6/pon2/ros2_ws/build/Artaud/prefix_override:/home/felix/mod6/pon2/ros2_ws/install/Artaud/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/Artaud build --build-base /home/felix/mod6/pon2/ros2_ws/build/Artaud/build install --record /home/felix/mod6/pon2/ros2_ws/build/Artaud/install.log --single-version-externally-managed

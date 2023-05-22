@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/Artaud/Artaud.egg-info
+writing ../../build/Artaud/Artaud.egg-info/PKG-INFO
+writing dependency_links to ../../build/Artaud/Artaud.egg-info/dependency_links.txt
+writing entry points to ../../build/Artaud/Artaud.egg-info/entry_points.txt
+writing requirements to ../../build/Artaud/Artaud.egg-info/requires.txt
+writing top-level names to ../../build/Artaud/Artaud.egg-info/top_level.txt
+writing manifest file '../../build/Artaud/Artaud.egg-info/SOURCES.txt'
+reading manifest file '../../build/Artaud/Artaud.egg-info/SOURCES.txt'
+writing manifest file '../../build/Artaud/Artaud.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/felix/mod6/pon2/ros2_ws/build/Artaud/build
+creating /home/felix/mod6/pon2/ros2_ws/build/Artaud/build/lib
+creating /home/felix/mod6/pon2/ros2_ws/build/Artaud/build/lib/Artaud
+copying Artaud/__init__.py -> /home/felix/mod6/pon2/ros2_ws/build/Artaud/build/lib/Artaud
+running install
+running install_lib
+creating /home/felix/mod6/pon2/ros2_ws/install/Artaud/lib/python3.10/site-packages/Artaud
+copying /home/felix/mod6/pon2/ros2_ws/build/Artaud/build/lib/Artaud/__init__.py -> /home/felix/mod6/pon2/ros2_ws/install/Artaud/lib/python3.10/site-packages/Artaud
+byte-compiling /home/felix/mod6/pon2/ros2_ws/install/Artaud/lib/python3.10/site-packages/Artaud/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/felix/mod6/pon2/ros2_ws/install/Artaud/share/ament_index
+creating /home/felix/mod6/pon2/ros2_ws/install/Artaud/share/ament_index/resource_index
+creating /home/felix/mod6/pon2/ros2_ws/install/Artaud/share/ament_index/resource_index/packages
+copying resource/Artaud -> /home/felix/mod6/pon2/ros2_ws/install/Artaud/share/ament_index/resource_index/packages
+copying package.xml -> /home/felix/mod6/pon2/ros2_ws/install/Artaud/share/Artaud
+running install_egg_info
+Copying ../../build/Artaud/Artaud.egg-info to /home/felix/mod6/pon2/ros2_ws/install/Artaud/lib/python3.10/site-packages/Artaud-0.0.0-py3.10.egg-info
+running install_scripts
+Installing Antonin script to /home/felix/mod6/pon2/ros2_ws/install/Artaud/lib/Artaud
+writing list of installed files to '/home/felix/mod6/pon2/ros2_ws/build/Artaud/install.log'

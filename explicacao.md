@@ -1,0 +1,15 @@
+Visando 'interagir com uma simulação feita no Gazebo de modo que a plataforma simulada do turtlebot3 seja capaz de mover-se de maneira controlada', foi criado o outro arquivo presente nesse repositório. O seu funcionamento é estruturado sobre dois arquivos de nome __init__.py; um localizado na build, e outro localizado no source.
+
+Abaixo, é descrito como funciona o primeiro.
+    A classe 'heliogabalus' configura um nó ROS2 que subscreve a dados odométricos e controla a posição do robô por meio de registrar sua posição e orientação esporadicamente.
+    No método __init__, o nó é inicializado com o nome "sun" usando super().__init__('sun'). Cria um publisher para controlar a velocidade do robô e um subscriber para receber informações de odometria.
+    O método pose_callback é uma função de callback executada sempre que novos dados de odometria são recebidos. Ele armazena os dados recebidos no atributo odomData da classe.
+    O método movement é outra função de callback, executada em intervalos fixos (time_count). Ele verifica se os dados de odometria foram recebidos (self.odomData is not None) e extrai a posição do robô (x, y, z) e orientação (theta) da mensagem de odometria recebida. Em seguida, registra essas informações usando self.get_logger().info().
+    A função main serve como entry point. Ela inicializa a biblioteca cliente ROS2, cria uma instância da classe heliogabalus, aguarda o time.sleep, limpa os recursos (move.destroy_node()), e encerra o client library ROS2 (rclpy.shutdown()).
+
+Abaixo, é descrito como funciona o segundo, um funcionamento estruturalmente similar ao do primeiro.
+    A classe heliogabalus implementa um nó ROS2 que controla o movimento do robô com base nos dados odométricos recebidos, sendo esse movimento determinado por uma sequência de pontos definidos em self.rot, nomeadamente, [7.0,-8.0, 4.0]. (o nome 'rot' remete ao termo 'rota'.)
+    No método __init__, o nó é inicializado com o nome "sun" usando super().__init__('sun'). Define parâmetros de rotação, cria um publisher para controlar a velocidade do robô, e um subscriber para receber informações de odometria.
+    O método pose_callback é uma função de callback executada sempre que novos dados de odometria são recebidos. Ele armazena os dados recebidos no atributo odomData da classe.
+    O método movement é uma função de controle de movimento que é executada em intervalos regulares. Se houverem dados de odometria disponíveis (self.odomData is not None), ele extrai a posição e orientação do robô dos dados de odometria recebidos. Em seguida, ele verifica se há um destino definido e, com base nisso, decide se o robô deve se mover em direção ao destino ou parar. De acordo com a distância entre o robô e o destino, ele ajusta a velocidade linear do robô e publica-a no tópico /cmd_vel.
+    A função main serve como entry point. Ela inicializa a biblioteca cliente ROS2, cria uma instância da classe heliogabalus, aguarda o time.sleep, inicia a execução do nó com rclpy.spin(move), e encerra o client library ROS2 (rclpy.shutdown()).
